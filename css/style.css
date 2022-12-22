@@ -32,3 +32,21 @@ body{
 #navbar li a.active{
     color: #088178;
 }
+
+#upp{
+    background-image: url('../img/b.jpg');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3rem;
+    margin-bottom: auto;
+}
+  
+.blink-soft {
+    animation: blinker 1.5s linear infinite;
+  }
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
