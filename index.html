@@ -15,22 +15,39 @@
 
 <body>
 
-    <section id="header">
-        <a href="$"><img src="img/logo.png" alt=""></a>
-        <div>
-            <ul id="navbar">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Mens</a></li>
-                <li><a href="#">Womens</a></li>
-                <li><a href="#">Arrival</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#"><i class="bi bi-cart"></i></a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="bg-light text-light p-5 text-center text-md-satrt" id="upp">
+    <nav id="mynav" class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
         <div class="container">
+            <a class="navbar-brand" href="#" id="menu"><img src="" alt="your LOGO here" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto" id="menu">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Womens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Arrivals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <section class="bg-light text-light p-5 text-center text-sm-satrt" id="upp">
+        <div class="container-lg">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-5">
                     <div>
@@ -43,9 +60,6 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veniam ex atque optio
                             perspiciatis. Itaque obcaecati reprehenderit natus, fuga ab dolores. Vitae nam laboriosam
                             officiis aperiam distinctio fuga voluptate, temporibus, placeat adipisci quam animi ratione
-                            dolores esse commodi dolor porro maxime omnis accusamus libero nostrum tenetur corrupti
-                            quisquam
-                            ipsa. Doloribus.
                         </p>
                         <div class="btn btn-primary btn-lg">Explore more</div>
                     </div>
@@ -252,6 +266,49 @@
             </div>
         </div>
     </section>
+
+    <!-- More of Section -->
+    <section class="p-5">
+        <div class="container" id="mrr">
+            <div class="row text-center g-4">
+                <h2 class="text-center mb-4">More About our services</h2>
+                <div class="col-md">
+                    <div class="card img-fluid">
+                        <img class="card-img-top" src="img/b18.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Bonus</h4>
+                            <p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+                                itaque?</p>
+                            <a href="#" class="btn btn-secondary">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md">
+                    <div class="card img-fluid">
+                        <img class="card-img-top" src="img/b16.jpg" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h4 class="card-title">Everyday Discount</h4>
+                            <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
+                                sunt.</p>
+                            <a href="#" class="btn btn-info">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container">
+            <p class="lead">
+                Copyright&copy; 2022 Gateway ICT Consult and Advisory
+            </p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1"></i>
+            </a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -35,10 +35,9 @@ body{
 
 #upp{
     background-image: url('../img/b.jpg');
-    height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: auto;
 }
   
@@ -50,3 +49,23 @@ body{
       opacity: 0;
     }
   }
+nav a:hover{
+    background-color: #32bbf64a;
+}
+
+#mrr h4{
+    color: rgb(36, 203, 21);
+    font-size: 40px;
+    font-weight: 400;
+    text-align: left;
+}
+
+#mrr p{
+    color: rgb(50, 69, 48);
+    font-size: 25px;
+    font-weight: 300;
+    padding-right: 20px;
+    justify-content: left;
+}
+
+
