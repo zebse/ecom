@@ -1,27 +1,29 @@
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
     background-color: rgb(188, 213, 219);
-    box-shadow: 0 5px 15px rgba(0, 0, 0,0.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
-body{
+
+body {
     width: 100%;
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#navbar li{
+#navbar li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
-#navbar li a{
+#navbar li a {
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -29,38 +31,45 @@ body{
 }
 
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li a.active {
     color: #088178;
 }
 
-#upp{
+#upp {
     background-image: url('../img/b.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 5rem;
+    margin-top: 1rem;
     margin-bottom: auto;
 }
-  
+
 .blink-soft {
     animation: blinker 1.5s linear infinite;
-  }
-  @keyframes blinker {
-    50% {
-      opacity: 0;
-    }
-  }
-nav a:hover{
-    background-color: #32bbf64a;
 }
 
-#mrr h4{
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+nav a:hover {
+    background-color: #32bbf64a;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    background-color: #a1e9b0f3;
+}
+
+#mrr h4 {
     color: rgb(36, 203, 21);
     font-size: 40px;
     font-weight: 400;
     text-align: left;
 }
 
-#mrr p{
+#mrr p {
     color: #fff;
     font-size: 25px;
     font-weight: 300;
@@ -68,4 +77,184 @@ nav a:hover{
     justify-content: left;
 }
 
+footer {
+    background-color: #074774;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 15px;
+    margin: 0 0 10px 0;
+}
+
+footer a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fefefe;
+}
+
+/* new headr css */
+body {
+    font-family: cursive;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #585858;
+}
+
+#header {
+    background-color: #074774;
+    overflow: hidden;
+}
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {}
+
+.navbar a {
+    text-decoration: none;
+}
+
+h2.logo {
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+}
+
+h2.logo strong {
+    font-size: 35px;
+    color: #EDF828;
+    font-weight: 600;
+}
+
+h2.center-logo {
+    margin: 0 25px;
+}
+
+#navbarSupportedContent {
+    justify-content: center;
+}
+
+ul.navbar-nav {}
+
+ul.navbar-nav li.nav-item {
+    margin-right: 25px;
+}
+
+ul.navbar-nav li.nav-item:last-child {
+    margin-right: 0;
+}
+
+ul.navbar-nav li.nav-item a.nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #EDF828;
+}
+
+ul.navbar-nav li.nav-item a.nav-link:hover {
+    color: #EDF828;
+}
+
+/* slider CSS */
+/*!
+ * Start Bootstrap - Modern Business HTML Template (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html,
+body {
+    height: 100%;
+}
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 60%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}

@@ -15,61 +15,87 @@
 
 <body>
 
-    <nav id="mynav" class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+    <div id="header">
         <div class="container">
-            <a class="navbar-brand" href="#" id="menu"><img src="" alt="your LOGO here" class="img-fluid"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto" id="menu">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Mens</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Womens</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Arrivals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><i class="bi bi-cart"></i></a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-
-    <section class="bg-light text-light p-5 text-center text-sm-satrt" id="upp">
-        <div class="container-lg">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <div>
-                        <h1>Big Discount
-                            <span class="text-primary">
-                                Shop Your Fashion
-                            </span>
-                        </h1>
-                        <p class="lead my-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt veniam ex atque optio
-                            perspiciatis. Itaque obcaecati reprehenderit natus, fuga ab dolores. Vitae nam laboriosam
-                            officiis aperiam distinctio fuga voluptate, temporibus, placeat adipisci quam animi ratione
-                        </p>
-                        <div class="btn btn-primary btn-lg">Explore more</div>
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="navbar-brand d-block d-lg-none" href="#">
+                    <a href="#">
+                        <h2 class="logo"><strong>E</strong>njam</h2>
+                    </a>
                 </div>
+                <button class="navbar-toggler navbar_toggle" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
 
+                    </ul>
+                    <div class="navbar-brand d-none d-lg-block" href="#">
+                        <a href="#">
+                            <h2 class="logo center-logo"><strong>Gateway</strong> ICT Consult and Advisory</h2>
+                        </a>
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- image Slider -->
+    
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('img/b.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/support.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('img/consult.png');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
             </div>
         </div>
-    </section>
 
-
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
 
     <!-- Equal card size -->
     <section class="bg-light pt-5 pb-5 shadow-sm text-center" id="arr1">
@@ -268,41 +294,79 @@
     </section>
 
     <!-- More of Section -->
-    <section class="p-5">
-        <div class="container" id="mrr">
-            <div class="row text-center g-4">
-                <h2 class="text-center mb-4">More About our services</h2>
-                <div class="col-md">
-                    <div class="card img-fluid">
-                        <img class="card-img-top" src="img/b18.jpg" alt="Card image">
-                        <div class="card-img-overlay">
-                            <h4 class="card-title">Bonus</h4>
-                            <p class="card-text lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
-                                itaque?</p>
-                            <a href="#" class="btn btn-secondary">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card img-fluid">
-                        <img class="card-img-top" src="img/b10.jpg" alt="Card image">
-                        <div class="card-img-overlay">
-                            <h4 class="card-title">Everyday Discount</h4>
-                            <p class="card-text lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora,
-                                sunt.</p>
-                            <a href="#" class="btn btn-info">Learn more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 
     <!-- Footer section -->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
-        <div class="container">
-            <p class="lead">
-                Copyright&copy; 2022 Gateway ICT Consult and Advisory
+    <footer class="text-center text-lg-start text-white">
+        <div class="container p-4 pb-0">
+            <section class="">
+                <div class="row">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="mb-4 font-weight-bold">
+                            Gateway ICT Consult and Advisory PLC
+                        </h6>
+                        <p style="text-align: justify;">
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Our Services</h6>
+                        <p>Web Development</p>
+                        <p>ERP</p>
+                        <p>Trainig and Tutorials</p>
+                        <p>ICT Consulting</p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="#">About us</a>
+                        </p>
+                        <p>
+                            <a href="#">Services</a>
+                        </p>
+                        <p>
+                            <a href="#">FAQs</a>
+                        </p>
+                        <p>
+                            <a href="#">Contact us</a>
+                        </p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p><i class="bi bi-geo-alt-fill mr-3"></i> Addis Ababa, Ethiopis</p>
+                        <p><i class="bi bi-envelope mr-3"></i> info@gmail.com</p>
+                        <p><i class="bi bi-telephone mr-3"></i> +2519 123 4567 11</p>
+                        <p><i class="bi bi-telephone mr-3"></i> +2519 234 5678 22</p>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-3">
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <div class="p-3">
+                            Copyright&copy; 2022 Gateway ICT Consult and Advisory | Powerd by Gateway team
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+                            <i class="bi bi-facebook"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+                            <i class="bi bi-linkedin"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+                            <i class="bi bi-telegram"></i></a>
+                        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button">
+                            <i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </section>
             </p>
             <a href="#" class="position-absolute bottom-0 end-0 p-5">
                 <i class="bi bi-arrow-up-circle h1"></i>
@@ -310,7 +374,83 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+
+        $(document).ready(function () {
+            var sync1 = $("#sync1");
+            var sync2 = $("#sync2");
+
+            sync1.owlCarousel({
+                singleItem: true,
+                autoPlay: true,
+                slideSpeed: 1000,
+                navigation: false,
+                pagination: false,
+                afterAction: syncPosition,
+                responsiveRefreshRate: 200,
+            });
+
+            sync2.owlCarousel({
+                items: 5,
+                itemsDesktop: [1199, 10],
+                itemsDesktopSmall: [979, 10],
+                itemsTablet: [768, 8],
+                itemsMobile: [479, 4],
+                pagination: false,
+                responsiveRefreshRate: 100,
+                afterInit: function (el) {
+                    el.find(".owl-item").eq(0).addClass("synced");
+                }
+            });
+
+            function syncPosition(el) {
+                var current = this.currentItem;
+                $("#sync2")
+                    .find(".owl-item")
+                    .removeClass("synced")
+                    .eq(current)
+                    .addClass("synced")
+                if ($("#sync2").data("owlCarousel") !== undefined) {
+                    center(current)
+                }
+            }
+
+            $("#sync2").on("click", ".owl-item", function (e) {
+                e.preventDefault();
+                var number = $(this).data("owlItem");
+                sync1.trigger("owl.goTo", number);
+            });
+
+            function center(number) {
+                var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+                var num = number;
+                var found = false;
+                for (var i in sync2visible) {
+                    if (num === sync2visible[i]) {
+                        var found = true;
+                    }
+                }
+
+                if (found === false) {
+                    if (num > sync2visible[sync2visible.length - 1]) {
+                        sync2.trigger("owl.goTo", num - sync2visible.length + 2)
+                    } else {
+                        if (num - 1 === -1) {
+                            num = 0;
+                        }
+                        sync2.trigger("owl.goTo", num);
+                    }
+                } else if (num === sync2visible[sync2visible.length - 1]) {
+                    sync2.trigger("owl.goTo", sync2visible[1])
+                } else if (num === sync2visible[0]) {
+                    sync2.trigger("owl.goTo", num - 1)
+                }
+
+            }
+
+        });
+
+    </script>
 </body>
 
 </html>
