@@ -60,6 +60,7 @@ nav a:hover {
 
 footer a:hover {
     background-color: #a1e9b0f3;
+    text-decoration: underline;
 }
 
 #mrr h4 {
@@ -169,4 +170,4 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
     color: #EDF828;
 }
 
-/* slider CSS */
+/* Service CSS */

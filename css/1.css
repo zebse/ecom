@@ -1,0 +1,38 @@
+
+body{
+    font-family: 'Livvic', sans-serif;
+}
+.section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.bg-color{
+    background-color: #F6F7F9;
+}
+.sub-heading span{
+    color: #106eea;
+    font-weight: 600;
+}
+.sub-heading h2{
+    font-weight: 700;
+    font-family: 'Livvic', sans-serif;
+}
+.service-box{
+    padding: 20px;
+    background-color: #fff;
+    transition: .4s;
+    transform: translateY(0);
+    cursor: pointer;
+}
+.service-content h3{
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+}
+.service-box:hover{
+    box-shadow: 0 0 30px #eee;
+    transform: translateY(-.5rem);
+}
+.service-content h3:hover{
+    color: #106eea;
+}
