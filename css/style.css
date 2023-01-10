@@ -171,3 +171,29 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 
 /* Service CSS */
+.service-box {
+    padding: 20px;
+    background-color: #fff;
+    transition: .4s;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.service-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(58, 58, 58);
+}
+
+.service-box:hover {
+    box-shadow: 0 0 30px #eee;
+    transform: translateY(-.5rem);
+}
+
+.service-content h3:hover {
+    color: #106eea;
+}
+#services {
+    padding-top: 100px;
+    min-height: 100%;
+}
