@@ -263,4 +263,11 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   height: 65px;
   width: 65px;
 }
-
+/* Logo */
+.logo {
+  text-align: left;
+}
+.logo img {
+  width: 25%;
+  image-resolution: 100 125;
+}
