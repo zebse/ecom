@@ -172,13 +172,20 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 
 /* Service CSS */
 .service-box {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
   background-color: #fff;
   transition: .4s;
   transform: translateY(0);
   cursor: pointer;
 }
-
+.service-content {
+  flex: 1;
+  overflow: hidden;
+}
 .service-content h3 {
   font-size: 24px;
   font-weight: 700;
@@ -186,7 +193,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 
 .service-box:hover {
-  box-shadow: 0 0 30px #eee;
+  box-shadow: 0 0 15px #074774;
   transform: translateY(-.5rem);
 }
 
@@ -270,4 +277,65 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 .logo img {
   width: 25%;
   image-resolution: 100 125;
+}
+
+/*Devices*/
+@media(max-width:1200px) {
+  html {
+      font-size: 55%;
+  }
+}
+@media(max-width:991px) {
+  .header {
+      padding: 2rem 3%;
+  }
+
+  section {
+      padding: 10rem 3% 2rem;
+  }
+
+  .footer {
+      padding: 2rem 3%;
+  }
+  .services{
+      padding-bottom: 7rem;
+  }  
+}
+@media(max-width:768px) {
+  navbar-nav {
+      display: block;
+  }
+  .nav-item a {
+    display: block;
+    font-size: 2rem;
+    margin: 0 2rem;
+}
+  #abt h4{
+    font-size: 3rem;
+  }
+}
+@media (max-width:450px){
+  html{
+      font-size: 40%;
+  }
+}
+
+/*Scroll up*/
+#backToTopBtn {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 25%;
+    background: #08f014;
+    padding: .5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+    font-size: 2rem;
+}
+
+#backToTopBtn:hover {
+    
+    opacity: 50%;
 }

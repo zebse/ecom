@@ -46,7 +46,7 @@
                             <h2 class="logo center-logo"><strong>Gateway</strong> ICT Consult and Advisory</h2>
                         </a>
                     </div>
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" id="menu">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
@@ -153,7 +153,7 @@
     </section>
 
     <!-- Vision and MIssion Section -->
-    <section class="p-5">
+    <section class="p-5" id = "abt">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-5">
@@ -195,8 +195,8 @@
             <div class="row mb-5">
                 <div class="col-lg-5 col-md-8 m-auto">
                     <div class="sub-heading text-center">
-                        <h1>What we <strong style="color: #08f014;"> Offer </strong></h1>
-                        <h5>We Are Offering All Kinds of IT Solutions Services</h5>
+                        <h1>What we <strong> Offer </strong></h1>
+                        <h3>We Are Offering <span class="auto-text" style="color:#08f014"></span></h3>
                     </div>
                 </div>
             </div>
@@ -204,7 +204,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <img src="img/slider/ERP1.png" class="img-fluid w-50" alt="">
+                            <img src="img/slider/ERP.png" class="img-fluid w-50" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">ERP Software Development</h3>
@@ -220,7 +220,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <h3> <img src="img/slider/web1.jpg" class="img-fluid w-50" alt=""> </h3>
+                            <h3> <img src="img/slider/web.jpg" class="img-fluid w-50" alt=""> </h3>
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">Web Development</h3>
@@ -235,7 +235,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <img src="img/slider/support1.png" class="img-fluid w-50" alt="">
+                            <img src="img/slider/support.png" class="img-fluid w-50" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">Technical Support</h3>
@@ -249,7 +249,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <img src="img/slider/tr1.png" class="img-fluid w-50" alt="">
+                            <img src="img/slider/tr.png" class="img-fluid w-50" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">Training and Tutorials</h3>
@@ -266,7 +266,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <img src="img/slider/consult1.png" class="img-fluid w-50" alt="">
+                            <img src="img/slider/consult.png" class="img-fluid w-50" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">ICT Consulting</h3>
@@ -504,6 +504,9 @@
         </div>
     </div>
 
+    <!-- back to top button -->
+    <button id="backToTopBtn" title="Back to Top"><i class="bi bi-chevron-up"></i></button>
+
     <!-- Footer section -->
     <footer class="text-center text-lg-start text-white">
         <div class="container p-4 pb-0">
@@ -582,8 +585,17 @@
             </section>
         </div>
     </footer>
-
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-text", {
+            strings: ["ERP Software Development", "Web Development", "ICT Consulting", "Technical Support"],
+            typeSpeed: 100,
+            backSpeed: 25,
+            loop: true
+        });
     </script>
 </body>
 
