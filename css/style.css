@@ -200,12 +200,25 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 .service-content h3:hover {
   color: #106eea;
 }
+.service-icon img{
+  animation: floatImg 4s ease-in-out infinite;
+}
+@keyframes floatImg{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
 
 #services {
   padding-top: 100px;
   min-height: 100%;
 }
-
 
 /*contact section CSS */
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
@@ -339,3 +352,4 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
     
     opacity: 50%;
 }
+
