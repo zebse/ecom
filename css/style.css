@@ -181,6 +181,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   transition: .4s;
   transform: translateY(0);
   cursor: pointer;
+  padding-bottom: 10rem;
 }
 .service-content {
   flex: 1;
@@ -190,6 +191,25 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   font-size: 24px;
   font-weight: 700;
   color: rgb(58, 58, 58);
+  border-bottom: 1px solid black;
+  /* Center the underline on the h3 element */
+  position: relative;
+  padding-bottom: 0.5em;
+  /* Create an absolutely positioned underline that is centered on the h3 element */
+  &:after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+.service-icon img{
+  height: 27vh;
+  width: 20vw;
 }
 
 .service-box:hover {
@@ -312,6 +332,10 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   }
   .services{
       padding-bottom: 7rem;
+  }
+  .service-icon img{
+    width: 100%;
+    height: 30vh;
   }  
 }
 @media(max-width:768px) {
@@ -326,10 +350,20 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   #abt h4{
     font-size: 3rem;
   }
+  .btn{
+    font-size: 2.5rem;
+  }
+  h4,h5{
+    font-size: 2rem;
+  }
+  .service-icon img{
+    width: 100%;
+    height: 30vh;
+  }
 }
 @media (max-width:450px){
   html{
-      font-size: 40%;
+      font-size: 50%;
   }
 }
 

@@ -41,5 +41,18 @@ window.addEventListener('scroll', () => {
     });
   });
   
-  
+/*Read More button*/
+function toggleContent() {
+  var content = document.getElementById("collapseExample");
+  var button = document.querySelector(".btn");
+  if (content.classList.contains("show")) {
+    content.classList.remove("show");
+    button.innerHTML = '<i class="bi bi-chevron-double-right"></i>' + "Read more";
+  } else {
+    content.classList.add("show");
+    button.innerHTML = '<i class="bi bi-chevron-double-left"></i>' + "Read less";
+  }
+}
+
+
 
