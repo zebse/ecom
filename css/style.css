@@ -240,6 +240,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   min-height: 100%;
 }
 
+
 /*contact section CSS */
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
 .contact3 {
@@ -383,7 +384,5 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 
 #backToTopBtn:hover {
-    
     opacity: 50%;
 }
-

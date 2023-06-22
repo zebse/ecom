@@ -153,7 +153,7 @@
                     </p>
                     <button class="btn btn-outline-primary" type="button" onclick="toggleContent()">
                         <i class="bi bi-chevron-double-right"></i> Read more
-                      </button>
+                    </button>
                 </div>
             </div>
         </div>
@@ -211,7 +211,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <img src="img/ERP.jpg"  alt="">
+                            <img src="img/ERP.jpg" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">ERP Software Development</h3>
@@ -227,7 +227,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <h3> <img src="img/web1.jpg"  alt=""> </h3>
+                            <h3> <img src="img/web1.jpg" alt=""> </h3>
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">Web Development</h3>
@@ -242,7 +242,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <img src="img/support.jpg"  alt="">
+                            <img src="img/support.jpg" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">Technical Support</h3>
@@ -256,7 +256,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <img src="img/slider/tr.png"  alt="">
+                            <img src="img/slider/tr.png" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">Training and Tutorials</h3>
@@ -273,7 +273,7 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-box">
                         <div class="service-icon mb-3">
-                            <img src="img/consult.jpg"  alt="">
+                            <img src="img/consult.jpg" alt="">
                         </div>
                         <div class="service-content">
                             <h3 class="mb-3">ICT Consulting</h3>
@@ -291,7 +291,7 @@
                             <img src="img/main.jpg" class="img-fluid w-34vw" alt="">
                         </div>
                         <div class="service-content">
-                            <h3 class="mb-3">Hardware and Software Maintenance</h3>
+                            <h3 class="mb-3">Maintenance Service</h3>
                             <p style="text-align: justify;">
                                 Do you want to keep your software and hardware running smoothly and efficiently? Our
                                 software
@@ -299,13 +299,17 @@
                                 software and hardware in
                                 top condition, including:
                             <ul>
-                                <li>Software updates: to keep the software up to date</li>
-                                <li>Bug fixes and Security patches</li>
-                                <li>Performance optimization and User training</li>
-                                <li>Repairs and Replacements</li>
-                                <li>Upgrades</li>
+                                <span class="collapse" id="collapseExample">
+                                    <li>Software updates: to keep the software up to date</li>
+                                    <li>Bug fixes and Security patches</li>
+                                    <li>Performance optimization and User training</li>
+                                    <li>Repairs and Replacements</li>
+                                    <li>Upgrades</li>
+                                </span>
                             </ul>
-
+                            <button class="btn btn-outline-primary" onclick="toggleContent()">
+                                <i class="bi bi-chevron-double-right"></i> Show More
+                            </button>
                             </p>
                         </div>
                     </div>
@@ -377,7 +381,7 @@
                                     <div class="col-lg-4 col-md-4">
                                         <div class="card-body d-flex align-items-center c-detail pl-0">
                                             <div class="mr-3 align-self-center">
-                                                <img src="img/addr.png" alt="">
+                                                <img src="img/addr.png " alt="">
                                             </div>
                                             <div class="">
                                                 <h6 class="font-weight-medium">Address</h6>
@@ -390,7 +394,7 @@
                                     <div class="col-lg-4 col-md-4">
                                         <div class="card-body d-flex align-items-center c-detail">
                                             <div class="mr-3 align-self-center">
-                                                <img src="img/phone.png">
+                                                <img src="img/phone.png ">
                                             </div>
                                             <div class="">
                                                 <h6 class="font-weight-medium">Phone</h6>
@@ -403,7 +407,7 @@
                                     <div class="col-lg-4 col-md-4">
                                         <div class="card-body d-flex align-items-center c-detail">
                                             <div class="mr-3 align-self-center">
-                                                <img src="img/mail.png">
+                                                <img src="img/mail.png ">
                                             </div>
                                             <div class="">
                                                 <h6 class="font-weight-medium">Email</h6>
@@ -598,14 +602,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
     </script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed(".auto-text", {
-            strings: ["ERP Software Development", "Web Development", "ICT Consulting", "Technical Support"],
-            typeSpeed: 100,
-            backSpeed: 25,
-            loop: true
-        });
-    </script>
 </body>
 
 </html>

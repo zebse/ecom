@@ -1,3 +1,11 @@
+/*Typed JS*/
+var typed = new Typed(".auto-text", {
+  strings: ["ERP Software Development", "Web Development", "ICT Consulting", "Technical Support"],
+  typeSpeed: 100,
+  backSpeed: 25,
+  loop: true
+});
+
 const el = document.querySelector('.spinner-wrapper');
 window.addEventListener('load', () => {
     el.style.opacity = '0';
@@ -50,9 +58,10 @@ function toggleContent() {
     button.innerHTML = '<i class="bi bi-chevron-double-right"></i>' + "Read more";
   } else {
     content.classList.add("show");
-    button.innerHTML = '<i class="bi bi-chevron-double-left"></i>' + "Read less";
+    button.innerHTML = "Read less"+'<i class="bi bi-chevron-double-left"></i>';
   }
 }
+
 
 
 
