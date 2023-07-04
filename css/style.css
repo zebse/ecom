@@ -10,7 +10,6 @@
 body {
   width: 100%;
 }
-
 #navbar {
   display: flex;
   align-items: center;
@@ -183,10 +182,12 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   cursor: pointer;
   padding-bottom: 10rem;
 }
+
 .service-content {
   flex: 1;
   overflow: hidden;
 }
+
 .service-content h3 {
   font-size: 24px;
   font-weight: 700;
@@ -195,6 +196,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   /* Center the underline on the h3 element */
   position: relative;
   padding-bottom: 0.5em;
+
   /* Create an absolutely positioned underline that is centered on the h3 element */
   &:after {
     content: "";
@@ -207,7 +209,8 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
     transform: translate(-50%);
   }
 }
-.service-icon img{
+
+.service-icon img {
   height: 27vh;
   width: 20vw;
 }
@@ -220,17 +223,21 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 .service-content h3:hover {
   color: #106eea;
 }
-.service-icon img{
+
+.service-icon img {
   animation: floatImg 4s ease-in-out infinite;
 }
-@keyframes floatImg{
-  0%{
+
+@keyframes floatImg {
+  0% {
     transform: translateY(0);
   }
-  50%{
+
+  50% {
     transform: translateY(-2rem);
   }
-  100%{
+
+  100% {
     transform: translateY(0);
   }
 }
@@ -240,9 +247,14 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   min-height: 100%;
 }
 
+.acc {
+  padding-top: 75px;
+  min-height: 100%;
+}
 
 /*contact section CSS */
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+
 .contact3 {
   color: #8d97ad;
   font-weight: 300;
@@ -267,26 +279,26 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
 }
 
-.contact3 .btn-danger-gradiant {
-  background: #ff4d7e;
-  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
-  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+.contact3 .btn-outline-primary {
+  background: #0275d8;
+  background: -webkit-linear-gradient(legacy-direction(to right), #0275d8 0%, #5bc0de 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#0275d8), to(#5bc0de));
+  background: -webkit-linear-gradient(left, #0275d8 0%, #5bc0de 100%);
+  background: -o-linear-gradient(left, #0275d8 0%, #5bc0de 100%);
+  background: linear-gradient(to right, #0275d8 0%, #5bc0de 100%);
 }
 
-.contact3 .btn-danger-gradiant:hover {
-  background: #ff6a5b;
-  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
-  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+.contact3 .btn-outline-primary:hover {
+  background: #5bc0de;
+  background: -webkit-linear-gradient(legacy-direction(to right), #5bc0de 0%, #0275d8 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#5bc0de), to(#0275d8));
+  background: -webkit-linear-gradient(left, #5bc0de 0%, #0275d8 100%);
+  background: -o-linear-gradient(left, #5bc0de 0%, #0275d8 100%);
+  background: linear-gradient(to right, #5bc0de 0%, #0275d8 100%);
 }
 
 /*Spinner */
-.spinner-wrapper{
+.spinner-wrapper {
   background-color: #000;
   position: fixed;
   top: 0;
@@ -299,15 +311,20 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   align-items: center;
   transition: all 4s;
   text-decoration: #08f014;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.spinner-border{
+
+
+.spinner-border {
   height: 65px;
   width: 65px;
 }
+
 /* Logo */
 .logo {
   text-align: left;
 }
+
 .logo img {
   width: 25%;
   image-resolution: 100 125;
@@ -316,73 +333,114 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 /*Devices*/
 @media(max-width:1200px) {
   html {
-      font-size: 55%;
+    font-size: 55%;
   }
 }
+
 @media(max-width:991px) {
   .header {
-      padding: 2rem 3%;
+    padding: 2rem 3%;
   }
 
   section {
-      padding: 10rem 3% 2rem;
+    padding: 10rem 3% 2rem;
   }
 
   .footer {
-      padding: 2rem 3%;
+    padding: 2rem 3%;
   }
-  .services{
-      padding-bottom: 7rem;
+
+  .services {
+    padding-bottom: 7rem;
   }
-  .service-icon img{
+
+  .service-icon img {
     width: 100%;
     height: 30vh;
-  }  
+  }
 }
+
 @media(max-width:768px) {
   navbar-nav {
-      display: block;
+    display: block;
   }
+
   .nav-item a {
     display: block;
     font-size: 2rem;
     margin: 0 2rem;
-}
-  #abt h4{
+  }
+
+  #abt h4 {
     font-size: 3rem;
   }
-  .btn{
+
+  .btn {
     font-size: 2.5rem;
   }
-  h4,h5{
+
+  h4,
+  h5 {
     font-size: 2rem;
   }
-  .service-icon img{
+
+  .service-icon img {
     width: 100%;
     height: 30vh;
   }
 }
-@media (max-width:450px){
-  html{
-      font-size: 50%;
+
+@media (max-width:450px) {
+  html {
+    font-size: 50%;
   }
+  .spinner-wrapper{
+    font-size: .5rem;
+  }
+}
+/*Accordian*/
+.accordion{
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+.accordion-button:hover{
+  color: #088178;
+}
+.accordion-collapse{
+  font: .3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+/*Nav bar ICON */
+.navbar-toggler-icon{
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 /*Scroll up*/
 #backToTopBtn {
-    position: fixed;
-    right: 2rem;
-    bottom: 2rem;
-    border-radius: 25%;
-    background: #08f014;
-    padding: .5rem;
-    border: none;
-    cursor: pointer;
-    opacity: 100%;
-    transition: opacity 0.5s;
-    font-size: 2rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  border-radius: 25%;
+  background: #08f014;
+  padding: .5rem;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.5s;
+  font-size: 2rem;
 }
 
 #backToTopBtn:hover {
-    opacity: 50%;
+  opacity: 50%;
 }
+
+/*Typed JS*/
+.auto-text {
+  font-size: 2rem;
+  color: var(--main-color);
+  border-right: .55rem solid #074774;
+}
+

@@ -1,49 +1,52 @@
 <?php
-//check all the fields and email is valid
-$errors = '';
-$myemail = 'youngict2014@gmail.com'; //<-----Put Your email address here.
-if (
-    empty($_POST['name']) ||
-    empty($_POST['email']) ||
-    empty($_POST['subject']) ||
-    empty($_POST['message'])
-) {
-    $errors .= "\n Error: all fields are required";
-}
 
-$name = $_POST['name'];
-$email_address = $_POST['email'];
-$subject = $_POST['subject'];
-$message = $_POST['message'];
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-if (
-    !preg_match(
-        "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
-        $email_address
-    )
-) {
-    $errors .= "\n Error: Invalid email address";
-}
-//compose email to send
+require 'vendor/autoload.php';
+
 if (isset($_POST['submit'])) {
-    $to = "youngict2014@gmail.com"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
     $name = $_POST['name'];
+    $email = $_POST['email'];
     $subject = $_POST['subject'];
-    $mssg = $_POST['message'];
-    $subject = $_POST['subject'];
-    $subject2 = "Copy of your form submission";
-    $message = $name . " " . $subject . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $name . "\n\n" . $_POST['message'];
+    $message = $_POST['message'];
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to, $subject, $message, $headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    //echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
-    echo ("<script LANGUAGE='JavaScript'>
-            window.alert('Thank you' .$name. 'We eill contact you shortly!');
-            window.location.href='http://localhost:3000/index.html';
-            </script>");
+    $mail = new PHPMailer(true);
+
+    try {
+        // SMTP Configuration
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'youngict2014@gmail.com';
+        $mail->Password = 'ovokuhsfiftpjpnj'; // your Gmail account password
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
+
+        $mail->SMTPOptions = [
+            'ssl' => [
+                'verify_peer' => false,
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
+            ]
+        ];
+        // Sender and Recipient
+        $mail->setFrom($email, $name);
+        $mail->addAddress('youngict2014@gmail.com');
+
+        // Email Content
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body = $message;
+
+        // Send the email
+        $mail->send();
+        echo "<script LANGUAGE='JavaScript'>
+                window.alert('Thank you " . $name . "! We will contact you shortly!');
+                window.location.href='http://localhost:3000/index.html';
+            </script>";
+    } catch (Exception $e) {
+        echo "Error sending email: " . $mail->ErrorInfo;
+    }
 }
 ?>
