@@ -392,9 +392,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
     margin-top: 3rem;
   }
 }
-.loading-text{
-  font-size: 7rem;
-}
+
 @media (max-width:450px) {
   html {
     font-size: 50%;
