@@ -393,30 +393,11 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   }
 }
 .loading-text{
-  font-size: 10rem;
+  font-size: 7rem;
 }
 @media (max-width:450px) {
   html {
     font-size: 50%;
-  }
-}
-
-/* Adjust the font size for screens up to 767px */
-@media only screen and (max-width: 767px) {
-  .loading-text {
-      font-size: 5rem;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .loading-text {
-      font-size: 10rem;
-  }
-}
-
-/* Adjust the font size for screens larger than 992px */
-@media only screen and (min-width: 992px) {
-  .loading-text {
-      font-size: 12rem;
   }
 }
 
