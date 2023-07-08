@@ -43,7 +43,7 @@ if (isset($_POST['submit'])) {
         $mail->send();
         echo "<script LANGUAGE='JavaScript'>
                 window.alert('Thank you " . $name . "! We will contact you shortly!');
-                window.location.href='http://localhost:3000/index.html';
+                window.location.href='https://gateway2ict.com/';
             </script>";
     } catch (Exception $e) {
         echo "Error sending email: " . $mail->ErrorInfo;

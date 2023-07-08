@@ -374,6 +374,9 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 
 @media(max-width:768px) {
+  body{
+    font-style: normal !important; 
+  }
   navbar-nav {
     display: block;
   }
@@ -417,6 +420,9 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 
 @media (max-width:450px) {
+  body{
+    font-style: normal !important; 
+  }
   html {
     font-size: 50%;
   }
@@ -452,16 +458,19 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 /*Scroll up*/
 #backToTopBtn {
   position: fixed;
-  right: 2rem;
-  bottom: 2rem;
-  border-radius: 25%;
+  right: .5rem;
+  bottom: 1rem;
+  border-radius: 50%;
   background: #08f014;
-  padding: .5rem;
+  padding: .4rem;
   border: none;
   cursor: pointer;
   opacity: 100%;
   transition: opacity 0.5s;
-  font-size: 2rem;
+  font-size: 3rem;
+  padding-bottom: 0.001rem;
+  padding-top: 1.2rem;
+  text-align: center;
 }
 
 #backToTopBtn:hover {
@@ -478,5 +487,6 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 /*Image Slider */
 .carousel-item img {
   width: 100%;
-  height: 70vh; 
+  height: 50vh; 
 }
+/*Footer */
