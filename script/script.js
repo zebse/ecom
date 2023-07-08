@@ -1,6 +1,6 @@
 /*Typed JS*/
 var typed = new Typed(".auto-text", {
-  strings: ["ERP Software Development", "Web Development", "ICT Consulting", "Technical Support"],
+  strings: ["ERP Software Development", "Web Development", "ICT Consulting", "Technical Support","Mobile App Development"],
   typeSpeed: 10,
   backSpeed: 35,
   backDelay: 2500,
@@ -58,10 +58,10 @@ function toggleContent() {
   var button = document.querySelector(".btn");
   if (content.classList.contains("show")) {
     content.classList.remove("show");
-    button.innerHTML = '<i class="bi bi-chevron-double-right"></i>' + "Read more";
+    button.innerHTML = "Read more";
   } else {
     content.classList.add("show");
-    button.innerHTML = "Read less" + '<i class="bi bi-chevron-double-left"></i>';
+    button.innerHTML = "Read less";
   }
 }
 function toggleContent1() {
