@@ -320,7 +320,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   align-items: center;
   transition: all 4s;
   text-decoration: #08f014;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -374,9 +374,6 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 }
 
 @media(max-width:768px) {
-  body{
-    font-style: normal !important; 
-  }
   navbar-nav {
     display: block;
   }
@@ -414,15 +411,9 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   #services{
     padding-top: 115px;
   }
-  .service-content{
-    font-family: cursive !important;
-  }
 }
 
 @media (max-width:450px) {
-  body{
-    font-style: normal !important; 
-  }
   html {
     font-size: 50%;
   }
@@ -430,8 +421,15 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
     width: 100%;
     max-height: 17vh;
   }
-  .service-content{
-    font-family: cursive !important;
+}
+@media only screen and (max-width: 768px) {
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+}
+@media only screen and (max-width: 450px) {
+  body {
+    font-family: 'Times New Roman', Times, serif;
   }
 }
 
@@ -458,7 +456,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 /*Scroll up*/
 #backToTopBtn {
   position: fixed;
-  right: .5rem;
+  right: .75rem;
   bottom: 1rem;
   border-radius: 50%;
   background: #08f014;
@@ -489,4 +487,4 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   width: 100%;
   height: 50vh; 
 }
-/*Footer */
+
