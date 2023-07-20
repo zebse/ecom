@@ -64,17 +64,6 @@ function toggleContent() {
     button.innerHTML = "Read less";
   }
 }
-function toggleContent1() {
-  var content = document.getElementById("collapseExample");
-  var button = document.querySelector(".btn");
-  if (content.classList.contains("show")) {
-    content.classList.remove("show");
-    button.innerHTML = "Show more";
-  } else {
-    content.classList.add("show");
-    button.innerHTML = "Show less";
-  }
-}
 
 /*Scroll Reveal*/
 ScrollReveal({ 
@@ -87,3 +76,24 @@ ScrollReveal({
 ScrollReveal().reveal('.service-content', { origin: 'top' });
 //ScrollReveal().reveal('.col-md, .h2', { origin: 'right' });
 
+/*Image Lazy Loading */
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll("img[loading='lazy']"));
+
+  if ("IntersectionObserver" in window) {
+    var lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.removeAttribute("data-src");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  }
+});
