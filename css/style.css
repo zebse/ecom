@@ -344,7 +344,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 @media(max-width:768px) {
   body{
     font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
+    font-style: normal !important;
   }
   navbar-nav {
     display: block;
@@ -388,7 +388,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 @media (max-width:450px) {
   body{
     font-family: 'Courier New', Courier, monospace;
-    font-style: normal;
+    font-style: normal !important;
   }
   html {
     font-size: 50%;
