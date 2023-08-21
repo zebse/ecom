@@ -11,6 +11,10 @@ if (isset($_POST['submit'])) {
     $subject = $_POST['subject'];
     $message = $_POST['message'];
 
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $emailErr = "Invalid email format";
+      }
     $mail = new PHPMailer(true);
 
     try {
