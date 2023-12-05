@@ -73,7 +73,7 @@ ScrollReveal({
   delay:200
 });
 
-ScrollReveal().reveal('.service-content', { origin: 'top' });
+//ScrollReveal().reveal('.service-content', { origin: 'top' });
 //ScrollReveal().reveal('.col-md, .h2', { origin: 'right' });
 
 /*Image Lazy Loading */
