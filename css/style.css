@@ -197,7 +197,6 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   color: #3e4555;
 }
 
-
 .contact3 .font-weight-medium {
   font-weight: 500;
 }
@@ -242,6 +241,9 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   font-family: 'Courier New', Courier, monospace;
 }
 
+textarea{
+  resize: none;
+}
 
 .spinner-border {
   height: 65px;
@@ -420,7 +422,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
 
 #backToTopBtn {
   position: fixed;
-  width: 35px;
+  width: 30px;
   right: .75rem;
   bottom: 1rem;
   border-radius: 50%;
@@ -460,11 +462,6 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   margin-left: 8rem;
   flex-direction: row;
 }
-
-#price{
-  padding-top: 110px;
-}
-
 
 .card__content {
   position: relative;
@@ -587,6 +584,10 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
   margin-left: 4rem;
 }
 
+.pr_intro{
+  padding: 0 85px;
+}
+
 @media(max-width:768px) {
   .card__container{
     margin: 0;
@@ -604,8 +605,15 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
     font-size: 3.5rem;
     font-weight: bold;
   }
+  .card__pricing{
+    height: 79px;
+  }
   .card__pricing-symbol{
     font-size: 1.5rem;
+  }
+  .card__list-item{
+    font-size: 1.75rem;
+    font-weight: 500;
   }
 }
 
